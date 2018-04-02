@@ -57,6 +57,9 @@ app.get('/', (req, res) => {
 
             res.send({message: 'adios mundo'});
             // print each gig to the console in a neat format
+        }).catch((err)=>{
+            console.log(err);
+            res.send(err);
         })
 
 
